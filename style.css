@@ -1,0 +1,61 @@
+body {
+    background-color: #330066;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    color: white;
+    font-size: 35px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    color: #330066;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    user-select: none;
+}
+
+button:hover {
+    background-color: blueviolet;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .title {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
